@@ -1,5 +1,5 @@
 public class Inheritance {
-    int veelcount;
+    int WheelCount;
 
     void start(){
         System.out.println("Vechical is starting");

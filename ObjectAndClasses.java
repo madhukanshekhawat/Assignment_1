@@ -33,6 +33,6 @@ public class ObjectAndClasses {
         s1.id=1;
         s1.name="Madhu";
         System.out.println(s1.id +" "+ s1.name);
-//        System.out.println(s2.getId()+" "+s2.getName());
+//       System.out.println(s2.getId()+" "+s2.getName());
     }
 }

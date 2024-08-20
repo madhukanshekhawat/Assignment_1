@@ -1,4 +1,6 @@
-public class truck extends Inheritance{
+package day1;
+
+public class truck extends Inheritance {
     void capacity(){
         System.out.println("It can load 4 maruti 800");
     }

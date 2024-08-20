@@ -1,4 +1,4 @@
-import javax.management.ObjectName;
+package day1;
 
 public class ObjectAndClasses {
     int id;
@@ -27,7 +27,7 @@ public class ObjectAndClasses {
 
     public static void main(String[] args) {
         ObjectAndClasses s1 = new ObjectAndClasses();
-//        ObjectAndClasses s2 = new ObjectAndClasses();
+//        day1.ObjectAndClasses s2 = new day1.ObjectAndClasses();
 //        s2.setId(2);
 //        s2.setName("Goransh");
         s1.id=1;

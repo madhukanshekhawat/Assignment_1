@@ -1,3 +1,5 @@
+package day1;
+
 public class polymorphismEx {
     static int add(int a,int b){
         return a+b;

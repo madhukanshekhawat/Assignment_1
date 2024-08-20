@@ -1,4 +1,6 @@
-public class mahindratruck extends truck{
+package day1;
+
+public class mahindratruck extends truck {
 
     public static void main(String[] args) {
         mahindratruck mt1 = new mahindratruck();

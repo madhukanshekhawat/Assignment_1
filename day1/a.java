@@ -1,4 +1,4 @@
-import javax.sound.midi.SysexMessage;
+package day1;
 
 abstract class a {
     void wheels(){

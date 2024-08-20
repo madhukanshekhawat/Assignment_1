@@ -1,3 +1,4 @@
+package day1;
 
 public class finalEx {
     final double PI = 3.14;

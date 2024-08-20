@@ -1,4 +1,6 @@
-public class car extends Inheritance{
+package day1;
+
+public class car extends Inheritance {
     void start(){
         System.out.println("Car is starting");
     } // method overriding

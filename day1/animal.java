@@ -1,3 +1,5 @@
+package day1;
+
 interface animal{
     void sound();
     void eat();

@@ -1,7 +1,8 @@
 package day4;
 
 public class exceptionHandling {
-    public static void divide(int a, int b) throws ArithmeticException {
+    public static void
+    divide(int a, int b) throws ArithmeticException {
         if(b==0){
             throw new ArithmeticException("oops! Divison by zero");
         }

@@ -2,7 +2,7 @@ package day5;
 
 import java.io.*;
 
-public class serialArray {
+public class Serialarray {
     public static void main(String[] args) {
         int[] intArray = {10, 20, 30, 40, 50};
 

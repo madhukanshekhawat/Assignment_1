@@ -2,11 +2,11 @@ package day5;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
-public class serial {
+public class Serial {
     public static void main(String[] args) {
         try {
             //object created
-            serilaization s1 = new serilaization("Madhu kanwar", "madhu@gmail.com", 21, "Jaipur");
+            Serilaization s1 = new Serilaization("Madhu kanwar", "madhu@gmail.com", 21, "Jaipur");
             //Write into file
             FileOutputStream f1 = new FileOutputStream("xyz.txt");
             // converting it into byte stream

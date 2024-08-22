@@ -1,6 +1,6 @@
 package day1;
 
-interface animal{
+interface Animal {
     void sound();
     void eat();
 

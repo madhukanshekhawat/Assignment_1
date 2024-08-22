@@ -1,6 +1,6 @@
 package day1;
 
-abstract class a {
+abstract class A {
     void wheels(){
         System.out.println("it has 4 wheels");
     }

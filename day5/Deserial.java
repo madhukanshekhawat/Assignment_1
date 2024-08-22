@@ -2,13 +2,13 @@ package day5;
 
 import java.io.*;
 
-public class deserial {
+public class Deserial {
     public static void main(String[] args) {
        try{
            FileInputStream fi= new FileInputStream("xyz.txt");
            ObjectInputStream ob1 = new ObjectInputStream(fi);
 
-           serilaization s1 = (serilaization) ob1.readObject();
+           Serilaization s1 = (Serilaization) ob1.readObject();
 
            s1.displayName();
            System.out.println(s1.getAge());

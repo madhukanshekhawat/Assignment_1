@@ -1,6 +1,6 @@
 package day5;
 
-public class revString {
+public class Revstring {
     public static String reverseString(String str) {
         // Base case: if the string is empty or has only one character, it is already reversed
         if (str.isEmpty() || str.length() == 1) {

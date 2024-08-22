@@ -1,6 +1,6 @@
 package day1;
 
-class dog implements animal {
+class Dog implements Animal {
     @Override
     public void sound() {
         System.out.println("berks");
@@ -11,7 +11,7 @@ class dog implements animal {
         System.out.println("eats day1.dog food");
     }
     public static void main(String[] args) {
-      dog d1= new dog();
+      Dog d1= new Dog();
      d1.eat();
      d1.sound();
     }

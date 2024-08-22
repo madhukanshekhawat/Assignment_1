@@ -1,8 +1,8 @@
 package day2;
 
-class test extends Student{
+class Test extends Student{
     public static void main(String[] args) {
-        test t1 = new test();
+        Test t1 = new Test();
         t1.setRollNo(1);
         t1.setName("Madhu");
         t1.setDepartment("Java");

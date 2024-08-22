@@ -1,6 +1,6 @@
 package day1;
 
-class honda extends a {
+class honda extends A {
     @Override
     void model() {
         System.out.println(" model is Honda4");

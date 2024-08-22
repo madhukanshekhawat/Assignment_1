@@ -1,13 +1,13 @@
 package day1;
 
-public class mahindratruck extends truck {
+public class Mahindratruck extends Truck {
 
     public static void main(String[] args) {
-        mahindratruck mt1 = new mahindratruck();
+        Mahindratruck mt1 = new Mahindratruck();
         mt1.start();
-        mt1.WheelCount=16;
+        mt1.wheelCount=16;
         mt1.capacity();
-        System.out.println(mt1.WheelCount);
+        System.out.println(mt1.wheelCount);
     }
 }
 

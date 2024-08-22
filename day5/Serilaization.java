@@ -2,13 +2,13 @@ package day5;
 
 import java.io.Serializable;
 
-public class serilaization implements Serializable {
+public class Serilaization implements Serializable {
     String name;
     String email;
      transient  int age;
     String address;
 
-    public serilaization(String name, String email, int age, String address) {
+    public Serilaization(String name, String email, int age, String address) {
         this.name = name;
         this.email = email;
         this.age = age;

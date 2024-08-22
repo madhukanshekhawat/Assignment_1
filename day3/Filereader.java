@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class fileReader {
+public class Filereader {
         public static void main(String[] args) {
             try{
 //                FileReader reader = new FileReader("C:\\Users\\MadhuShekhawat\\Desktop\\alt.txt");

@@ -1,6 +1,6 @@
 package day2;
 
-public class enumEx {
+public class EnumEx {
     enum Status{ // class
         Running,Failed,Pending,Success; // type constants
     }

@@ -1,6 +1,6 @@
 package day4;
 
-public class exception {
+public class Exception {
     public static void main(String[] args) {
         try {
 //            A a1 = new A();

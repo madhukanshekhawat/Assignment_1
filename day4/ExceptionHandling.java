@@ -1,6 +1,6 @@
 package day4;
 
-public class exceptionHandling {
+public class ExceptionHandling {
     public static void
     divide(int a, int b) throws ArithmeticException {
         if(b==0){

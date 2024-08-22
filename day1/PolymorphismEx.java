@@ -1,6 +1,6 @@
 package day1;
 
-public class polymorphismEx {
+public class PolymorphismEx {
     static int add(int a,int b){
         return a+b;
     }
@@ -8,7 +8,7 @@ public class polymorphismEx {
         return a+b+c;
     }
     public static void main(String[] args) {
-        polymorphismEx calci1 = new polymorphismEx();
+        PolymorphismEx calci1 = new PolymorphismEx();
 
         int result=calci1.add(1,2);
 //        System.out.println(calci1.add(1,2));

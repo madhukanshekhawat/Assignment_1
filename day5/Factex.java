@@ -1,6 +1,6 @@
 package day5;
 
-public class factEx {
+public class Factex {
     static int fun(int n){
         if(n==0){
             return 0;

@@ -1,6 +1,6 @@
 package day1;
 
-public class finalEx {
+public class FinalEx {
     final double PI = 3.14;
 
     double circumstanceOfCircle(int r) {
@@ -9,7 +9,7 @@ public class finalEx {
     }
 
     public static void main(String[] args) {
-        finalEx f1 = new finalEx();
+        FinalEx f1 = new FinalEx();
         double r = f1.circumstanceOfCircle(2);
         System.out.println(r);
     }

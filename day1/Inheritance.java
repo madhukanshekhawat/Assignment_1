@@ -1,7 +1,7 @@
 package day1;
 
 public class Inheritance {
-    int WheelCount;
+    int wheelCount;
 
     void start(){
         System.out.println("Vechical is starting");

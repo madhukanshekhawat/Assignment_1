@@ -6,6 +6,10 @@ import java.util.Map;
 
 public class StudentGradeBook {
     private static void displayGradeBook(SortedMap<String, Integer> gradeBook) {
+        if (gradeBook.isEmpty()) {
+            System.out.println("Grade book is empty.");
+            return;
+        }
         for (Map.Entry<String, Integer> entry : gradeBook.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
@@ -13,10 +17,10 @@ public class StudentGradeBook {
     public static void main(String[] args) {
         SortedMap<String, Integer> gradeBook = new TreeMap<>();
 
-        gradeBook.put("Alia", 85);
-        gradeBook.put("Bhuwan", 92);
-        gradeBook.put("Chetna", 78);
-        gradeBook.put("Deepak", 90);
+        gradeBook.put("Alia", 78);
+        gradeBook.put("Bhuwan", 85);
+        gradeBook.put("Chetna", 90);
+        gradeBook.put("Deepak", 92);
 
         System.out.println("Grade Book:");
         displayGradeBook(gradeBook);
@@ -43,11 +47,26 @@ public class StudentGradeBook {
         System.out.println("\nFirst student: " + gradeBook.firstKey());
         System.out.println("Last student: " + gradeBook.lastKey());
 
-        System.out.println("\nSubmap from Bhuwan to Deepak: " + gradeBook.subMap("Bhuwan", "Deepak"));
+        SortedMap<String, Integer> subMap = gradeBook.subMap("Bhuwan", "Deepak");
+        if (subMap.isEmpty()) {
+            System.out.println("\nNo elements found in submap from Bhuwan to Deepak.");
+        } else {
+            System.out.println("\nSubmap from Bhuwan to Deepak: " + subMap);
+        }
 
-        System.out.println("HeadMap up to Deepak: " + gradeBook.headMap("Deepak"));// exclusive
+        SortedMap<String, Integer> headMap = gradeBook.headMap("Deepak");
+        if (headMap.isEmpty()) {
+            System.out.println("No elements found in headMap up to Deepak.");
+        } else {
+            System.out.println("HeadMap up to Deepak: " + headMap);
+        } // exclusive
 
-        System.out.println("TailMap from Bob: " + gradeBook.tailMap("Bob")); // inclusive
+        SortedMap<String, Integer> tailMap = gradeBook.tailMap("Bhuwan");
+        if (tailMap.isEmpty()) {
+            System.out.println("No elements found in tailMap from Bhuwan.");
+        } else {
+            System.out.println("TailMap from Bhuwan: " + tailMap);
+        } // inclusive
 
         gradeBook.clear();
         System.out.println("\nGrade Book after clearing:");

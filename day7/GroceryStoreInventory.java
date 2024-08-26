@@ -29,7 +29,7 @@ public class GroceryStoreInventory {
         displayInventory(stock);
 
 //        String item = "Bananas";
-          String item = "Egg";
+        String item = "Eggs";
         if (stock.containsKey(item)) {
             System.out.println("\nStock of " + item + ": " + stock.get(item));
         } else {
@@ -44,10 +44,14 @@ public class GroceryStoreInventory {
         System.out.println("Contains 12 units of Milk ? " + stock.containsValue(12));
 
 
-        System.out.println("\nSize of Stock: " + stock.size());
+        System.out.println("\nSize of Stock: " + (stock.isEmpty() ? "Inventory is empty." : stock.size()));
 
-        stock.compute("Milk", (k, v) -> (v == null) ? 0 : v + 10);
-        System.out.println("\nStock after computing new value for Milk:");
+        if (stock.containsKey("Milk")) {
+            stock.compute("Milk", (k, v) -> (v == null) ? 0 : v + 10);
+        } else {
+            System.out.println("\nMilk is not in the stock, cannot add stock.");
+        }
+        System.out.println("\nStock after update:");
         displayInventory(stock);
 
         stock.merge("Eggs", 10, Integer::sum);
@@ -59,6 +63,10 @@ public class GroceryStoreInventory {
         System.out.println("\nInventory after clearing:");
         displayInventory(stock);
         System.out.println("Oops! Nothing to show");
+
+
+        System.out.println("\nSize of Stock: " + (stock.isEmpty() ? "Inventory is empty." : stock.size()));
+
     }
 
 

@@ -12,7 +12,6 @@ public class MapEx {
         MyObject obj3 = new MyObject("1", "A");// Duplicate key
         MyObject obj4 = new MyObject("2", "A");
 
-
         // Adding objects to the map
         map.put(obj1, "First");
         map.put(obj2, "Second");

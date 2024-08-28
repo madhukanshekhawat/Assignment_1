@@ -50,4 +50,7 @@ public class Customer implements Comparable<Customer> {
     public int compareTo(Customer o) {
         return o.id > this.id ? 1 : -1 ;
     }
+
+    public void produce_item(int i) {
+    }
 }

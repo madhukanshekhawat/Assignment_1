@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class StreamOperationEx5 {
+public class StreamOperationEx10 {
     public static void main(String[] args) {
         List<String> words = Arrays.asList("apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "apple");
         Stream<String> stream = words.stream()
@@ -14,11 +14,10 @@ public class StreamOperationEx5 {
                 .flatMap(word -> Stream.of(word.split("")))
                 .distinct()
                 .sorted()
-                .peek(System.out::println)
                 .limit(20)
                 .skip(2);
-        System.out.println("findFirst:");
-        Optional<String> first = stream.findFirst();
-        first.ifPresent(System.out::println);
+        System.out.println("\nUsing findAny:");
+        Optional<String> findAny = stream.findAny();
+        findAny.ifPresent(System.out::println);
     }
 }

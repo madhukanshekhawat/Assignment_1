@@ -1,6 +1,5 @@
 package day13;
 
-import javax.print.attribute.standard.Sides;
 import java.sql.*;
 import java.util.Scanner;
 
